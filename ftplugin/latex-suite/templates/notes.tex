@@ -1,0 +1,44 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+
+\RequirePackage{macros}
+\RequirePackage{fix-cm}
+
+\documentclass[12pt,reqno]{amsart}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{newtxmath} % by Chen
+\usepackage[scr=rsfso]{mathalfa}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage{marvosym}
+
+\oddsidemargin0.0in
+\evensidemargin0.0in
+\setlength{\topmargin}{.0in}
+\setlength{\textheight}{9.0 true in}
+\setlength{\textwidth}{6.5 true in}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem} [section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\numberwithin{equation}{section}
+
+\graphicspath{{./pic/}}
+
+\title{Average Perturbed System}
+
+\begin{document}
+<++>
+\end{document}
